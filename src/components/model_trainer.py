@@ -23,7 +23,7 @@ from src.utils import save_object, evaluate_models
 
 @dataclass
 class ModelTraningConfig:
-    train_model_file_path=os.path.join("astifacts", "model.pkl")
+    train_model_file_path=os.path.join("artifacts", "model.pkl")
 
 
 class ModelTrainer:
@@ -83,3 +83,4 @@ class ModelTrainer:
 
         except Exception as e:
             raise CustomException (e, sys)
+        
